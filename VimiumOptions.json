@@ -1,0 +1,30 @@
+{
+  "settingsVersion": "1.67",
+  "exclusionRules": [
+    {
+      "pattern": "https://www.youtube.com/watch?*",
+      "passKeys": "vsdjklm"
+    },
+    {
+      "pattern": "https?://www.nytimes.com/*",
+      "passKeys": ""
+    }
+  ],
+  "filterLinkHints": false,
+  "waitForEnterForFilteredHints": true,
+  "hideHud": false,
+  "keyMappings": "# Insert your preferred key mappings here.\n\n\" d：關閉分頁，預設為 x。\nmap d removeTab\n\n\" u：還原分頁，預設為 X。\nmap u restoreTab",
+  "linkHintCharacters": "sadfjklewcmpgh",
+  "linkHintNumbers": "0123456789",
+  "newTabUrl": "about:newtab",
+  "nextPatterns": "next,more,newer,>,›,→,»,≫,>>",
+  "previousPatterns": "prev,previous,back,older,<,‹,←,«,≪,<<",
+  "regexFindMode": false,
+  "ignoreKeyboardLayout": false,
+  "scrollStepSize": 60,
+  "smoothScroll": true,
+  "grabBackFocus": true,
+  "searchEngines": "w: https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s Wikipedia\n\n# More examples.\n#\n# (Vimium supports search completion Wikipedia, as\n# above, and for these.)\n#\n# g: https://www.google.com/search?q=%s Google\n# l: https://www.google.com/search?q=%s&btnI I'm feeling lucky...\n# y: https://www.youtube.com/results?search_query=%s Youtube\n# gm: https://www.google.com/maps?q=%s Google maps\n# b: https://www.bing.com/search?q=%s Bing\n# d: https://duckduckgo.com/?q=%s DuckDuckGo\n# az: https://www.amazon.com/s/?field-keywords=%s Amazon\n# qw: https://www.qwant.com/?q=%s Qwant",
+  "searchUrl": "https://www.google.com/search?q=",
+  "userDefinedLinkHintCss": "/* Link hint boxes */\ndiv > .vimiumHintMarker {\n    border: solid #ff2400 1px !important;\n    border-radius: 3px 3px 3px 3px;\n    background: black !important;\n    background-size: 800% 800%;\n    box-shadow: #ff2400 0px 0px 5px 2px !important;\n    -webkit-animation: rainbow 5s ease infinite;\n    -z-animation: rainbow 5s ease infinite;\n    -o-animation: rainbow 5s ease infinite;\n    animation: rainbow 5s ease infinite;\n}\n\n/* Link hint text */\ndiv > .vimiumHintMarker span {\n    color: white !important;\n    font-weight: bold !important;\n    font-size: 12px !important;\n}\n\n/* Link hint matching characters */\ndiv > .vimiumHintMarker > .matchingCharacter {\n    color : gray !important;\n}\n@-webkit-keyframes rainbow {\n    0%{filter :hue-rotate(0deg);}   \n    14%{filter :hue-rotate(45deg);} \n    28%{filter :hue-rotate(90deg);}\n    32%{filter :hue-rotate(135deg);}\n    43%{filter :hue-rotate(180deg);}\n    71%{filter :hue-rotate(225deg);}\n    85.2%{filter :hue-rotate(270deg);}\n    100%{filter :hue-rotate(315deg);}     \n}\n@-moz-keyframes rainbow {\n    0%{filter :hue-rotate(0deg);}   \n    14%{filter :hue-rotate(45deg);} \n    28%{filter :hue-rotate(90deg);}\n    32%{filter :hue-rotate(135deg);}\n    43%{filter :hue-rotate(180deg);}\n    71%{filter :hue-rotate(225deg);}\n    85.2%{filter :hue-rotate(270deg);}\n    100%{filter :hue-rotate(315deg);}\n}\n@-o-keyframes rainbow {\n    0%{filter :hue-rotate(0deg);}   \n    14%{filter :hue-rotate(45deg);} \n    28%{filter :hue-rotate(90deg);}\n    32%{filter :hue-rotate(135deg);}\n    43%{filter :hue-rotate(180deg);}\n    71%{filter :hue-rotate(225deg);}\n    85.2%{filter :hue-rotate(270deg);}\n    100%{filter :hue-rotate(315deg);}\n}\n@keyframes rainbow { \n    0%{filter :hue-rotate(0deg);}   \n    14%{filter :hue-rotate(45deg);} \n    28%{filter :hue-rotate(90deg);}\n    32%{filter :hue-rotate(135deg);}\n    43%{filter :hue-rotate(180deg);}\n    71%{filter :hue-rotate(225deg);}\n    85.2%{filter :hue-rotate(270deg);}\n    100%{filter :hue-rotate(315deg);}\n}\n\n/* HUD (\"heads-up display\") bar */\ndiv.vimiumHUD {\n  background: #282a36;\n  border: 1px solid #6272a4;\n}\n\ndiv.vimiumHUD .vimiumHUDSearchArea {\n  background: #282a36;\n}\n\ndiv.vimiumHUD .hud-find {\n  background: #282a36;\n  border: none;\n  color: #f8f8f2;\n}\n\ndiv.vimiumHUD span#hud-find-input{\n  color: #f8f8f2;  /* 'Foreground' color */\n}\n\ndiv.vimiumHUD span#hud-match-count {\n  color: #6272a4;  /* 'Comment' color */\n}\n\ndiv.vimiumHUD .vimiumHUDSearchAreaInner {\n  color: #6272a4;  /* 'Comment' color */\n}\n\n#vomnibar{\n    background-color: #44475A;\n}\n\n#vomnibar input {\n  color: #f8f8f2;\n  font: -moz-window;\n  /*font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/\n  font-size: 20px;\n  height: 34px;\n  margin-bottom: 0;\n  padding: 4px;\n  background-color: #282a36;\n  border-radius: 3px;\n  border: 1px solid #6272a4;\n  box-shadow: #bd93f9 0px 0px 1px;\n  width: 100%;\n  outline: none;\n  box-sizing: border-box;\n}\n\n#vomnibar .vomnibarSearchArea {\n  display: block;\n  padding: 10px;\n  background-color: #6272a4;\n  border-radius: 4px 4px 0 0;\n  border-bottom: 0px solid #bd93f9;\n}\n\n#vomnibar ul {\n  background-color: #44475a;\n  border-radius: 0 0 4px 4px;\n  list-style: none;\n  padding-top: 0;\n  padding-bottom: 0;\n  margin-block-start: 2px;\n  margin-block-end: 0px;\n}\n\n#vomnibar li {\n  border-bottom: 1px solid #6272a4;\n  line-height: 1.1em;\n  padding: 7px 10px;\n  font-size: 16px;\n  color: #f8f8f2;\n  position: relative;\n  display: list-item;\n  margin: auto;\n}\n\n#vomnibar li .vomnibarBottomHalf {\n  font-size: 15px;\n  margin-top: 3px;\n  padding: 2px 0;\n}\n\n#vomnibar li .vomnibarSource {\n  color: #bd93f9;\n  margin-right: 4px;\n}\n#vomnibar li .vomnibarRelevancy {\n  position: absolute;\n  right: 0;\n  top: 0;\n  padding: 5px;\n  background-color: #282a36;\n  color: #f8f8f2;\n  font-family: monospace;\n  width: 100px;\n  overflow: hidden;\n}\n\n#vomnibar li .vomnibarUrl {\n  white-space: nowrap;\n  color: #50fa7b;\n}\n\n#vomnibar li .vomnibarMatch {\n  font-weight: bold;\n  color: #ffb86c;\n}\n\n#vomnibar li em, #vomnibar li .vomnibarTitle {\n  color: #f8f8f2;\n  margin-left: 4px;\n  font-weight: normal;\n}\n#vomnibar li em { font-style: italic; }\n#vomnibar li em .vomnibarMatch, #vomnibar li .vomnibarTitle .vomnibarMatch {\n  color: #ffb86c;\n}\n\n#vomnibar li.vomnibarSelected {\n  background-color: #6272a4;\n  font-weight: normal;\n}\n\n#vomnibarInput::selection {\n  background-color: #8be9fd;\n}"
+}
